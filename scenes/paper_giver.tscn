@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://vn06rsc07cwj"]
+
+[ext_resource type="Script" uid="uid://bgqc1yfooqn45" path="res://scripts/paper_giver.gd" id="1_8jsta"]
+[ext_resource type="Texture2D" uid="uid://chvesujtr7ouo" path="res://assets/assets png/bookshelf.png" id="1_d378v"]
+[ext_resource type="Script" uid="uid://diyioowr4p1jb" path="res://scripts/interaction/interaction_area.gd" id="2_8jsta"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d378v"]
+size = Vector2(132, 105)
+
+[node name="paperGiver" type="Node2D"]
+script = ExtResource("1_8jsta")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(7, 3)
+scale = Vector2(1.49219, 1.26563)
+texture = ExtResource("1_d378v")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("2_8jsta")
+metadata/_custom_type_script = "uid://diyioowr4p1jb"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(29, -5.5)
+shape = SubResource("RectangleShape2D_d378v")
