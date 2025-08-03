@@ -2263,11 +2263,19 @@ zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
+<<<<<<< Updated upstream
 [node name="Killzone" parent="." instance=ExtResource("9_0tnpc")]
 position = Vector2(234, 583)
 
 [node name="Timer" type="Timer" parent="Killzone"]
 wait_time = 2.996
+=======
+[node name="KillZone" type="Area2D" parent="."]
+
+[node name="BoundaryGround" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(50, 615)
+shape = SubResource("WorldBoundaryShape2D_8cj0n")
+>>>>>>> Stashed changes
 
 [node name="Wall" type="StaticBody2D" parent="."]
 
