@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://r85jmihbvm5g"]
+[gd_scene load_steps=18 format=4 uid="uid://r85jmihbvm5g"]
 
 [ext_resource type="Texture2D" uid="uid://nfudum0alk8c" path="res://assets/background/library-bg.jpg" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bhhj2qjt2xiyl" path="res://scenes/player.tscn" id="2_lnu2h"]
@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://hm1sxvl67e3v" path="res://assets/tile/broken tile 2.png" id="4_gee14"]
 [ext_resource type="Texture2D" uid="uid://dfyeael52ackg" path="res://assets/tile/broken tile 3.png" id="5_0tnpc"]
 [ext_resource type="Texture2D" uid="uid://5p322qw2dr2k" path="res://assets/tile/broken tile 4.png" id="6_vtaks"]
-[ext_resource type="Texture2D" uid="uid://bmjyuhov7adqg" path="res://assets/tile/tile.png" id="7_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://bftxkbvesp6j8" path="res://scenes/killzone.tscn" id="9_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://4fa6esfwpbmv" path="res://scenes/door.tscn" id="9_vtaks"]
+[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="9_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dinhu"]
 texture = ExtResource("3_u5sy4")
@@ -84,7 +83,6 @@ texture = ExtResource("6_vtaks")
 5:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ca42v"]
-texture = ExtResource("7_kvpfn")
 0:6/0 = 0
 1:6/0 = 0
 2:6/0 = 0

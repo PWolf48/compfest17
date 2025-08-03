@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Compfest"
-run/main_scene="uid://cqxosveylo23m"
+run/main_scene="uid://c3gewb276w8tm"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

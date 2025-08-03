@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cqxosveylo23m"]
+[gd_scene load_steps=9 format=3 uid="uid://c3gewb276w8tm"]
 
-[ext_resource type="Script" uid="uid://doitv8q6a1tim" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://clrnuogue0bc4" path="res://scripts/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://bokcej7r0w8kw" path="res://assets/background/background.jpeg" id="2_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://db5mgwp7fr0n3" path="res://assets/assets png/bookshelf with book.png" id="3_wu84c"]
 
