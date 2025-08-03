@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dssuvdhjo47gn"]
+
+[ext_resource type="Script" uid="uid://bbghf1bnrhku8" path="res://scripts/magic.gd" id="1_788o1"]
+[ext_resource type="Texture2D" uid="uid://7hyxanpowcjm" path="res://assets/player/Base Body Template.png" id="1_ghace"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oitf5"]
+size = Vector2(8, 11)
+
+[node name="magic" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_788o1")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.23, 0.2)
+texture = ExtResource("1_ghace")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_oitf5")
+
+[node name="Node2D" type="Node2D" parent="CharacterBody2D"]
+position = Vector2(8, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(7, 7)
