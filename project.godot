@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Compfest"
-run/main_scene="uid://r85jmihbvm5g"
+run/main_scene="uid://c3gewb276w8tm"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[input]
+
+esc={
+"deadzone": 0.2,
+"events": [null, null]
+}
 
 [rendering]
 

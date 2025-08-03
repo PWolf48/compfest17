@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckpatxmyrtm0v"
-path="res://.godot/imported/wooden tile variant .png-ea03cd7619b95d4526654a7511d0a375.ctex"
+uid="uid://dn3e18d258k34"
+path="res://.godot/imported/ren_walk3.png-994a6f0ce50b8cc4b1c0b0ba44fdf9ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile/wooden tile variant .png"
-dest_files=["res://.godot/imported/wooden tile variant .png-ea03cd7619b95d4526654a7511d0a375.ctex"]
+source_file="res://assets/player animation/ren_walk3.png"
+dest_files=["res://.godot/imported/ren_walk3.png-994a6f0ce50b8cc4b1c0b0ba44fdf9ef.ctex"]
 
 [params]
 

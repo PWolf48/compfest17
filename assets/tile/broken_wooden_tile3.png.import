@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmjyuhov7adqg"
-path="res://.godot/imported/tile.png-93411a315e5823425328dacec95bb4ac.ctex"
+uid="uid://bpymjhxlk62fc"
+path="res://.godot/imported/broken_wooden_tile3.png-aa38936bc5401ce6d2204137634214fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile/tile.png"
-dest_files=["res://.godot/imported/tile.png-93411a315e5823425328dacec95bb4ac.ctex"]
+source_file="res://assets/tile/broken_wooden_tile3.png"
+dest_files=["res://.godot/imported/broken_wooden_tile3.png-aa38936bc5401ce6d2204137634214fd.ctex"]
 
 [params]
 
