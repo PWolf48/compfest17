@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://2cqluq3ghmdt"]
+
+[ext_resource type="Script" uid="uid://bx6uniywwmf7f" path="res://scripts/false_door.gd" id="1_ep0sg"]
+[ext_resource type="Texture2D" uid="uid://bcea2d2lrerbf" path="res://assets/assets png/opened_door.png" id="2_kgwud"]
+[ext_resource type="PackedScene" uid="uid://bu8b8bbdm1j3a" path="res://scenes/interaction/interaction_area.tscn" id="3_75ux7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oad77"]
+size = Vector2(63.875, 83.75)
+
+[node name="false_door" type="Node2D"]
+script = ExtResource("1_ep0sg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-35, -5)
+scale = Vector2(1.28516, 1.07422)
+texture = ExtResource("2_kgwud")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_75ux7")]
+action_name = "???"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, -10)
+shape = SubResource("RectangleShape2D_oad77")

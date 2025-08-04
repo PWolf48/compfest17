@@ -5,10 +5,9 @@ extends Node2D
 #@onready var speech_sound = preload("res://assets/sounds/paper_giver.wav")
 
 const lines: Array[String] = [
-	"M12",
-	"A7",
-	"T4",
-	"I10"
+	"Go to chamber M, Shelf number 12",
+	"Go to chamber A, Shelf number 7",
+	"Go to chamber T, Shelf number 4",
 ]
 
 func _ready():

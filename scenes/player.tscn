@@ -61,6 +61,7 @@ collision_layer = 2
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -8)
 shape = SubResource("CapsuleShape2D_3vyb7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -69,4 +70,4 @@ scale = Vector2(0.79, 0.78)
 sprite_frames = SubResource("SpriteFrames_qhqgy")
 animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.325984
+frame_progress = 0.270957

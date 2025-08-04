@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dq5yprbm25fju"]
+
+[ext_resource type="Script" uid="uid://dwwuykoup864a" path="res://scripts/truth_door.gd" id="1_4kfxy"]
+[ext_resource type="Texture2D" uid="uid://bcea2d2lrerbf" path="res://assets/assets png/opened_door.png" id="2_hhcao"]
+[ext_resource type="PackedScene" uid="uid://bu8b8bbdm1j3a" path="res://scenes/interaction/interaction_area.tscn" id="3_qouna"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oad77"]
+size = Vector2(63.875, 83.75)
+
+[node name="truth_door" type="Node2D"]
+script = ExtResource("1_4kfxy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-35, -5)
+scale = Vector2(1.28516, 1.07422)
+texture = ExtResource("2_hhcao")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_qouna")]
+action_name = "???"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, -10)
+shape = SubResource("RectangleShape2D_oad77")

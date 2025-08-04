@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvaf26cke7ofs"]
+
+[ext_resource type="Script" uid="uid://b112lmbtyhyt" path="res://scripts/chamber_t_door.gd" id="1_65whn"]
+[ext_resource type="Texture2D" uid="uid://bcea2d2lrerbf" path="res://assets/assets png/opened_door.png" id="2_ca8ap"]
+[ext_resource type="PackedScene" uid="uid://bu8b8bbdm1j3a" path="res://scenes/interaction/interaction_area.tscn" id="3_i5ls7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oad77"]
+size = Vector2(63.875, 83.75)
+
+[node name="chamberT_door" type="Node2D"]
+script = ExtResource("1_65whn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-35, -5)
+scale = Vector2(1.28516, 1.07422)
+texture = ExtResource("2_ca8ap")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_i5ls7")]
+action_name = "enter Chamber T"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, -10)
+shape = SubResource("RectangleShape2D_oad77")

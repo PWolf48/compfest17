@@ -1,11 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://lyyovyjonbyi"]
+[gd_scene load_steps=4 format=3 uid="uid://lyyovyjonbyi"]
 
 [ext_resource type="Texture2D" uid="uid://c3w4pgre5lht4" path="res://assets/bubble_dialog.png" id="1_40ig8"]
 [ext_resource type="Script" uid="uid://dx8ct54s0dme3" path="res://scripts/interaction/text_box.gd" id="1_o8p8f"]
+[ext_resource type="FontFile" uid="uid://b8voeab17mwje" path="res://assets/fonts/PressStart2P-Regular.ttf" id="3_q170l"]
 
 [node name="TextBox" type="MarginContainer"]
-offset_right = 61.0
-offset_bottom = 47.0
+offset_right = 32.0
+offset_bottom = 32.0
 script = ExtResource("1_o8p8f")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
@@ -26,6 +27,8 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="MarginContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_q170l")
+theme_override_font_sizes/font_size = 8
 vertical_alignment = 1
 
 [node name="LetterDisplayTimer" type="Timer" parent="."]

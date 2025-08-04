@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://017w0s10dug1"]
+
+[ext_resource type="Script" uid="uid://bx6uniywwmf7f" path="res://scripts/false_door.gd" id="1_7d87v"]
+[ext_resource type="Texture2D" uid="uid://bcea2d2lrerbf" path="res://assets/assets png/opened_door.png" id="2_7cst1"]
+[ext_resource type="PackedScene" uid="uid://bu8b8bbdm1j3a" path="res://scenes/interaction/interaction_area.tscn" id="3_wwg6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oad77"]
+size = Vector2(63.875, 83.75)
+
+[node name="chamber_door2" type="Node2D"]
+script = ExtResource("1_7d87v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-35, -5)
+scale = Vector2(1.28516, 1.07422)
+texture = ExtResource("2_7cst1")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_wwg6i")]
+action_name = "go back"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, -10)
+shape = SubResource("RectangleShape2D_oad77")

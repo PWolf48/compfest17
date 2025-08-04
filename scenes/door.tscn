@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm0ufp2opalje"]
+
+[ext_resource type="Script" uid="uid://d0lp34tvye47k" path="res://scripts/door.gd" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
+
+[node name="door" type="Area2D"]
+collision_mask = 3
+script = ExtResource("1_hpvv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uvdjg")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

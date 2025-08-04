@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://datvlflmx3ysy"]
+
+[ext_resource type="Script" uid="uid://bqf1u51keofaj" path="res://scripts/sheet_a.gd" id="1_1hcu7"]
+[ext_resource type="Texture2D" uid="uid://bapm7k4pux6c3" path="res://assets/assets png/sheet.png" id="2_cj5hf"]
+[ext_resource type="PackedScene" uid="uid://bu8b8bbdm1j3a" path="res://scenes/interaction/interaction_area.tscn" id="3_d4pnb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ni1l"]
+size = Vector2(92.75, 79)
+
+[node name="sheetA" type="Node2D"]
+script = ExtResource("1_1hcu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 1)
+scale = Vector2(0.517578, 0.5)
+texture = ExtResource("2_cj5hf")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_d4pnb")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_4ni1l")
